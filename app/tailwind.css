@@ -5,8 +5,8 @@
 
 @layer components {
 
-.page {
-@apply px-[8rem] pb-[5rem] pt-[2.5rem];
-}
+    .page {
+    @apply px-[8rem] pb-[5rem] pt-[2.5rem];
+    }
 
 }

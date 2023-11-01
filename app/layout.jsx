@@ -1,6 +1,7 @@
 import React from 'react'
 import './tailwind.css'
-import NavigationBar from '@/components/NavigationBar/NavigationBar'
+import NavigationBar from '@/components/NavigationBar'
+import LandingPage from '@/components/LandingPage'
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,12 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className='bg-slate-900 py-4 px-[3rem] flex justify-between text-white'>
-          <div className='bg-red-700 inline-block'>LOGO</div>
-          <div className='bg-red-700 inline-block'>LOGO</div>
-        </div>
+        <NavigationBar/>
+        <div>
         {children}
-        </body>
+        </div>
+     </body>
     </html>
   )
 }
